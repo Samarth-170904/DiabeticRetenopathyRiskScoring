@@ -11,3 +11,19 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report, roc_auc_score, confusion_matrix
 
 print("Libraries imported successfully.")
+
+def clean_data(df):
+    print("Cleaning dataset...")
+    
+    
+
+def main():
+    raw_df = pd.read_csv('metadata.csv')
+    print(f"Dataset loaded successfully, having columns and rows:{df.shape}")
+    
+    df = clean_data(raw_df)
+    
+    
+    
+if __name__ == '__main__':
+    main()
